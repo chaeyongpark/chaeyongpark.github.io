@@ -7,15 +7,8 @@
     background-color: #335B7A !important
 }
 
-.notice-title {
-    margin-top: 35px;
-    padding-top: 25px;
-    padding-left: 15px;
-    border-top: 2px solid #DDDDDD;
-    border-bottom: 2px solid #DDDDDD;
-}
 
-.navbar-pbs {
+.navbar-custom {
     background: white;
     -webkit-transition: all 0.4s ease-out;
     -ms-transition: all 0.4s ease-out;
