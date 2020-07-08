@@ -1,7 +1,15 @@
-{% extends base.html %}
-
-{% block content %}
-<div class="container">
-    Hi
-</div>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+    {% include header.html %}
+    <body>
+        <header>
+            {% include navbar.html %}
+        </header>
+        <main>
+            <div class="container">
+                Hi
+            </div>
+        </main>
+        {% include footer.html %}
+    </body>
+</html>
