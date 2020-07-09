@@ -15,6 +15,10 @@
     transition: all 0.4s ease-out;
 }
 
+.nav-color {
+	color: black;
+}
+
 .page-footer {
 	background-color: #335B7A !important;
 	color: white;
