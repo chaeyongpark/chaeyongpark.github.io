@@ -40,3 +40,13 @@ body {
 	bottom: 0;
 	width: 100%;
 }
+
+.about-me-title {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.about-me {
+	font-size: 18px;
+    line-height: 28px;
+}
