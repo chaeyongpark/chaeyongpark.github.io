@@ -13,12 +13,12 @@
                 Hi
             </div>
         </main>
-        {% include 'footer.html' %}
-        {% include_relative 'web/footer.html' %}
+            <div id="myFooter"></div>
         <script type="text/javascript">
             $(document).ready(function(){
                 $("#myHeader").load("web/header.html");
                 $("#myNav").load("web/navbar.html");
+                $("#myFooter").load("web/footer.html");
             });
         </script>
     </body>
