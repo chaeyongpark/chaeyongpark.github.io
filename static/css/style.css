@@ -14,3 +14,10 @@
     -ms-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
 }
+
+.page-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
