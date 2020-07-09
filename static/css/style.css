@@ -8,7 +8,7 @@
 }
 
 .il-black {
-	color: black;
+	color: black !important;
 }
 
 .navbar-custom {
