@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    {% include_relative web/header.html %}
+    <div id="myHeader"></div>
     <body>
         <header>
-            {% include navbar.html %}
+            <div id="myNav"></div>
         </header>
         <main>
             <div class="container">
@@ -12,5 +12,11 @@
         </main>
         {% include 'footer.html' %}
         {% include_relative 'web/footer.html' %}
+        <scrtipt>
+        $(document).ready(function(){
+            $("#myHeader").load("web/header.html");
+            $("#myNav").load("web/navbar.html");
+        });
+        </scrtipt>
     </body>
 </html>
