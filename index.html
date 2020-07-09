@@ -18,10 +18,8 @@
         <script src="./static/js/jquery.min/js"></script>
         <script src="./static/js/materialize.min.js"></script>
     </head>
-    <div id="myHeader"></div>
     <body>
         <header>
-
             <div id="myNav"></div>
         </header>
         <main>
@@ -31,11 +29,10 @@
         </main>
         {% include 'footer.html' %}
         {% include_relative 'web/footer.html' %}
-        <scrtipt type="text/javascript">
-        $(document).ready(function(){
-            $("#myHeader").load("web/header.html");
-            $("#myNav").load("web/navbar.html");
-        });
-        </scrtipt>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#myNav").load("web/navbar.html");
+            });
+        </script>
     </body>
 </html>
