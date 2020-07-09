@@ -13,7 +13,8 @@
                 Hi
             </div>
         </main>
-            <div id="myFooter"></div>
+            {% include_relative web/footer.html %}
+            {% include footer.html %}
         <script type="text/javascript">
             $(document).ready(function(){
                 $("#myHeader").load("web/header.html");
