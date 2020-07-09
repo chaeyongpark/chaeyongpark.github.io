@@ -1,3 +1,7 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* Color */
 .il-pink {
     background-color: #E5717F !important
@@ -14,6 +18,7 @@
 .brand-logo-cy {
 	color: black !important;
 	font-weight: bold;
+	white-space: nowrap;
 }
 
 .navbar-custom {
