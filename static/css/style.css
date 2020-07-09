@@ -11,6 +11,10 @@
 	color: black !important;
 }
 
+.il-bold {
+	font-weight: bold;
+}
+
 .navbar-custom {
     background: white;
     -webkit-transition: all 0.4s ease-out;
