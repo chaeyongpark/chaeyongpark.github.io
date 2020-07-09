@@ -16,6 +16,7 @@
 }
 
 .page-footer {
+	background-color: #335B7A !important
 	position: fixed;
 	left: 0;
 	bottom: 0;

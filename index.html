@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Chaeyong Park</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Chaeyong Park CV">
+        <meta name="author" content="Chaeyong Park">
+        
+        <!-- Compiled and minified CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./static/css/materialize.min.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+
+        <!-- JS -->
         <script src="./static/js/jquery.min.js"></script>
-        <div id="myHeader"></div>
+        <script src="./static/js/materialize.min.js"></script>
     </head>
     <body>
         <header>
-            <div id="myNav"></div>
+            <!-- Navbar -->
+            <div class="container-fluid">
+                <nav>
+                    <div class="nav-wrapper white">
+                        <a href="#" class="brand-logo">Chaeyong Park</a>
+                        <!--<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="publication.html">Publication</a></li>
+                            <li><a href="Research.html">Research</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
             <div class="container">
                 Hi
             </div>
         </main>
-            {% include_relative web/footer.html %}
-            {% include footer.html %}
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $("#myHeader").load("web/header.html");
-                $("#myNav").load("web/navbar.html");
-                $("#myFooter").load("web/footer.html");
-            });
-        </script>
+            <footer class="page-footer">
+                <div class="container">
+                &copy; 2020. Chaeyong Park
+                </div>
+            </footer>
     </body>
 </html>
