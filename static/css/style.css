@@ -1,5 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
 }
 
 /* Color */
@@ -11,12 +12,15 @@ body {
     background-color: #335B7A !important
 }
 
-.il-black {
-	color: black !important;
+.il-pink-text {
+    color: #E5717F !important
+}
+
+.il-blue-text {
+    color: #335B7A !important
 }
 
 .brand-logo-cy {
-	color: black !important;
 	font-weight: bold;
 	white-space: nowrap;
 }
@@ -28,12 +32,7 @@ body {
     transition: all 0.4s ease-out;
 }
 
-.nav-color {
-	color: black !important;
-}
-
 .page-footer {
-	background-color: #335B7A !important;
 	color: white;
 	position: fixed;
 	left: 0;
@@ -49,6 +48,7 @@ body {
 .about-me-description {
 	font-size: 1.25rem;
     line-height: 1.6rem;
+    font-weight: 300;
 }
 
 .section-padding {
