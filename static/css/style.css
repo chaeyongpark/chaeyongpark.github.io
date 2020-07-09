@@ -16,7 +16,7 @@
 }
 
 .nav-color {
-	color: black;
+	color: black !important;
 }
 
 .page-footer {
