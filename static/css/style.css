@@ -42,11 +42,15 @@ body {
 }
 
 .about-me-title {
-	font-size: 30px;
+	font-size: 1.9rem;
 	font-weight: 600;
 }
 
-.about-me {
-	font-size: 18px;
-    line-height: 28px;
+.about-me-description {
+	font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+
+.section-padding {
+	padding-top: 2rem;
 }
