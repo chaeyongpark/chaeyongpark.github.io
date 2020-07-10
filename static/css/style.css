@@ -54,3 +54,15 @@ body {
 .section-padding {
 	padding-top: 2rem;
 }
+
+.research-title {
+	text-align: center;
+	font-size: 2rem;
+	color: black !important;
+}
+
+.research-description {
+	text-align: center;
+	font-size: 1.5rem;
+	color: black !important;
+}
