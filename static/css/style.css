@@ -85,13 +85,13 @@ body {
 }
 
 .publication-authors {
-	margin-top: 1rem;
-	font-size: 1.1rem;
+	margin-top: 0.8rem;
+	font-size: 1rem;
 }
 
 .publication-informations {
-	margin-top: 1rem;
-	font-size: 1.1rem;
+	margin-top: 0.8rem;
+	font-size: 1rem;
 }
 
 .publication-buttons {
@@ -100,7 +100,7 @@ body {
 }
 
 .publication-buttons > .btn {
-	margin-top: 2rem;
+	margin-top: 0.5rem;
 	margin-left: 1rem;
 	font-size:  1rem;
 }
