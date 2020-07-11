@@ -85,13 +85,20 @@ body {
 }
 
 .publication-authors {
+	margin-top: 0.5rem
 	font-size: 1.1rem;
 }
 
 .publication-informations {
+	margin-top: 0.5rem
 	font-size: 1.1rem;
 }
 
 .publication-buttons {
+	display: flex;
 	justify-content: flex-end
+}
+
+.publication-buttons > .btn {
+	margin-left: 1rem;
 }
