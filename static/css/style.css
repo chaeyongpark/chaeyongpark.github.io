@@ -80,7 +80,16 @@ body {
 }
 
 .publication-title {
+	font-size: 2rem;
 	font-weight: 600;
+}
+
+.publication-author {
+	font-size: 1.5rem;
+}
+
+.publication-informations {
+	font-size: 1.5rem;
 }
 
 .publication-buttons {
