@@ -12,12 +12,20 @@ body {
     background-color: #335B7A !important
 }
 
+.main-color {
+    background-color: #335B7A !important
+}
+
 .il-pink-text {
     color: #E5717F !important
 }
 
 .il-blue-text {
     color: #335B7A !important
+}
+
+.main-color-text {
+    background-color: #335B7A !important
 }
 
 .brand-logo-cy {
@@ -33,11 +41,6 @@ body {
 }
 
 .page-footer {
-	color: white;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
 }
 
 .about-me-title {
@@ -52,7 +55,7 @@ body {
 }
 
 .section-padding {
-	padding-top: 2rem;
+	padding-top: 1.5rem;
 }
 
 .research-title {
@@ -66,4 +69,20 @@ body {
 	font-size: 1.5rem;
 	font-weight: 300;
 	color: black !important;
+}
+
+.my-name {
+	font-weight: 600;
+}
+
+.publicaion-description {
+	color: black !important;
+}
+
+.publication-title {
+	font-weight: 600;
+}
+
+.publication-buttons {
+	justify-content: flex-end
 }
