@@ -34,18 +34,16 @@ body {
 }
 
 .navbar-custom {
-    background: white;
-    -webkit-transition: all 0.4s ease-out;
-    -ms-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+    position: fixed;
+  	top: 0;
 }
 
 .page-footer {
 }
 
-.about-me-title {
+.section-title {
 	font-size: 2rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .about-me-description {
