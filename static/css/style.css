@@ -33,12 +33,7 @@ body {
 	white-space: nowrap;
 }
 
-.navbar-custom {
-    position: fixed;
-  	top: 0;
-}
-
-.navbar-menu {
+.navbar-menu > .li > .a {
 	font-size: 1.3rem;
 }
 
