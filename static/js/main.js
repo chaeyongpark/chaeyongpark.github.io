@@ -1,4 +1,3 @@
-$(document).ready( function() {
-	$("#myNavbar").load("./navbar.html");
+$(document).ready(function(){
+	$(".button-collapse").sideNav();
 });
-
