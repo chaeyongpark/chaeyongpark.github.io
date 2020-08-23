@@ -44,24 +44,25 @@ body {
 .section-title {
 	font-size: 3rem;	
 	font-weight: 700;
+	line-height: 3rem;
 }
 
 .section-research > .section-header > .section-description {
 	font-size: 1.5rem;
 	font-weight: 300;
-	margin-top: -1rem;
+	line-height: 1.5rem;
 }
 
 .section-research > .section-body > .research-title {
 	font-size: 1.8rem;
 	font-weight: 700;
+	line-height: 1.8rem;
 	margin-top: 1rem;
-	line-height: 2rem;
 }
 .section-research > .section-body > .research-title-conf {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: 300;
-	margin-top: -0.5rem;
+	line-height: 1.3rem;
 }
 
 .section-research > .section-body > .research-abstract {
@@ -71,16 +72,17 @@ body {
 }
 
 .section-research > .section-body > .research-abstract-description {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 300;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	text-align:justify;
+	line-height: 1.8rem;
 }
 
 .section-hr {
 	text-align: left;
-	margin-top: 1rem;
+	margin-top: 3rem;
 	margin-left: 0;
 	color: #AAAAAA !important
 }
