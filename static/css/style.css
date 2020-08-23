@@ -58,9 +58,9 @@ body {
 	margin-top: 1rem;
 }
 .section-research > .section-body > .research-title-conf {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: 300;
-	margin-top: -1rem;
+	margin-top: -0.5rem;
 }
 
 .section-research > .section-body > .research-abstract {
@@ -73,6 +73,7 @@ body {
 	font-size: 1.5rem;
 	font-weight: 300;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 	text-align:justify;
 }
 
