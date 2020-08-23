@@ -81,7 +81,7 @@ body {
 
 .section-hr {
 	text-align: left;
-	margin-top: 3rem;
+	margin-top: 5rem;
 	margin-left: 0;
 	color: #AAAAAA !important
 }
@@ -90,6 +90,9 @@ body {
 	padding-top: 1.5rem;
 }
 
+.sectioin-research-padding {
+	padding-top: 5rem;
+}
 
 
 .about-me-description {
