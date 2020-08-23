@@ -56,9 +56,10 @@ body {
 	font-size: 1.8rem;
 	font-weight: 700;
 	margin-top: 1rem;
+	line-height: 2rem;
 }
 .section-research > .section-body > .research-title-conf {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 300;
 	margin-top: -0.5rem;
 }
