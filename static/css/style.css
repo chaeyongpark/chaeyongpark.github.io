@@ -42,7 +42,7 @@ body {
 
 /* Section */
 .section-title {
-	font-size: 3rem;
+	font-size: 3rem;	
 	font-weight: 700;
 }
 
@@ -50,6 +50,22 @@ body {
 	font-size: 1.5rem;
 	font-weight: 300;
 	margin-top: -1rem;
+}
+
+.section-research > .section-body > .research-title {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.section-research > .section-body > .research-abstract {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-top: 3rem;
+}
+
+.section-research > .section-body > .research-abstract-description {
+	font-size: 1rem;
+	margin-top: 1rem;
 }
 
 .section-hr {
