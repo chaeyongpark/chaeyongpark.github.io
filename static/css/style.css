@@ -28,6 +28,8 @@ body {
     background-color: #335B7A !important
 }
 
+
+
 .brand-logo-cy {
 	font-weight: bold;
 	white-space: nowrap;
@@ -37,19 +39,26 @@ body {
 	font-size: 1.3rem;
 }
 
+
+/* Section */
 .section-title {
 	font-size: 2rem;
 	font-weight: 700;
+}
+
+.section-description {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.section-padding {
+	padding-top: 1.5rem;
 }
 
 .about-me-description {
 	font-size: 1.25rem;
     line-height: 1.6rem;
     font-weight: 300;
-}
-
-.section-padding {
-	padding-top: 1.5rem;
 }
 
 .research-title {
@@ -70,6 +79,8 @@ body {
 	font-weight: 700;
 }
 
+
+/* Publication */
 .publicaion-description {
 	color: black !important;
 }
