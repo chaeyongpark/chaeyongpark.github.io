@@ -53,8 +53,9 @@ body {
 }
 
 .section-research > .section-body > .research-title {
-	font-size: 1.5rem;
-	font-weight: 600;
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-top: 1rem;
 }
 
 .section-research > .section-body > .research-abstract {
@@ -64,14 +65,15 @@ body {
 }
 
 .section-research > .section-body > .research-abstract-description {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	margin-top: 1rem;
+	text-align:justify;
 }
 
 .section-hr {
-	width:70%;
 	text-align: left;
 	margin-left:0;
+	color: #555555 !important
 }
 
 .section-padding {
