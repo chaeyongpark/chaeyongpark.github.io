@@ -41,19 +41,21 @@ body {
 
 
 /* Section */
-.section-publication > .section-header > .section-title {
-	font-size: 2rem;
-	font-weight: 700;
-}
-
-.section-research > .section-header > .section-title {
+.section-title {
 	font-size: 3rem;
 	font-weight: 700;
 }
 
 .section-research > .section-header > .section-description {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 300;
+	margin-top: -1rem;
+}
+
+.section-hr {
+	width:70%;
+	text-align: left;
+	margin-left:0;
 }
 
 .section-padding {
