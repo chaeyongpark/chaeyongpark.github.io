@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	$('.sidenav').sidenav();
 	$('.research-card').matchHeight();
-	$('.fixed-action-btn').floatingActionButton();
 });
 
 $('.scroll-btn').click(function(e) {
