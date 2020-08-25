@@ -25,7 +25,7 @@ body {
 }
 
 .main-color-text {
-    background-color: #335B7A !important
+	color: #335B7A !important
 }
 
 
@@ -116,8 +116,7 @@ body {
 }
 
 .citation-panel {
-	background-color: #8FB6D4 !important;
-	border-radius: 50%;
+	background-color: #DEF1FF !important;
 }
 
 .my-name {
