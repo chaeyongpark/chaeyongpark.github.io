@@ -65,13 +65,13 @@ body {
 	line-height: 1.3rem;
 }
 
-.section-research > .section-body > .research-abstract {
+.section-research > .section-body > .research-content-header {
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin-top: 3rem;
 }
 
-.section-research > .section-body > .research-abstract-description {
+.section-research > .section-body > .research-content-abstract {
 	font-size: 1.4rem;
 	font-weight: 300;
 	margin-bottom: 1rem;
@@ -117,7 +117,7 @@ body {
 
 .citation-panel {
 	background-color: #8FB6D4 !important;
-	border-radius: 5%;
+	border-radius: 50%;
 }
 
 .my-name {
