@@ -81,19 +81,19 @@ body {
 }
 
 .section-research-body .citation {
-	background-color: #DEF1FF !important;
+	background-color: #ECEFF1;
 	font-family: Consolas;
 }
 
 .section-research-body .citation .description {
-	color: #335B7A;
+	color: #37474F;
 }
 
 .section-research-body > .hr {
 	text-align: left;
 	margin-top: 5rem;
 	margin-left: 0;
-	color: #AAAAAA !important
+	color: #AAAAAA;
 }
 
 /* Section */
