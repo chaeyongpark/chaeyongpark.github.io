@@ -85,6 +85,10 @@ body {
 	font-family: Consolas;
 }
 
+.section-research-body .citation .description {
+	color: #335B7A;
+}
+
 .section-research-body > .hr {
 	text-align: left;
 	margin-top: 5rem;
