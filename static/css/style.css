@@ -41,42 +41,56 @@ body {
 
 
 /* Section */
-.section-title {
+.section-research-header > .title {
 	font-size: 3rem;	
 	font-weight: 700;
 	line-height: 3rem;
 }
 
-.section-research > .section-header > .section-description {
+.section-research-header > .description {
 	font-size: 1.5rem;
 	font-weight: 300;
 	line-height: 1.5rem;
 }
 
-.section-research > .section-body > .research-title {
+.section-research-body > .title {
 	font-size: 1.8rem;
 	font-weight: 700;
 	line-height: 1.8rem;
 	margin-top: 1rem;
 }
-.section-research > .section-body > .research-title-conf {
+
+.section-research-body > .conf {
 	font-size: 1.2rem;
 	font-weight: 300;
 	line-height: 1.3rem;
 }
 
-.section-research > .section-body > .research-content-header {
+.section-research-body .header {
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin-top: 3rem;
 }
 
-.section-research > .section-body > .research-content-abstract {
+.section-research-body .abstract {
 	font-size: 1.4rem;
 	font-weight: 300;
 	margin-bottom: 1rem;
 	text-align:justify;
 	line-height: 1.8rem;
+}
+
+.section-research-body .citation {
+	background-color: #DEF1FF !important;
+	font-family: Consolas;
+}
+
+
+/* Section */
+.section-title {
+	font-size: 3rem;	
+	font-weight: 700;
+	line-height: 3rem;
 }
 
 .section-hr {
@@ -113,10 +127,6 @@ body {
 	font-size: 1.3rem;
 	font-weight: 300;
 	color: black !important;
-}
-
-.citation-panel {
-	background-color: #DEF1FF !important;
 }
 
 .my-name {
