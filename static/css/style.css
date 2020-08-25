@@ -40,7 +40,7 @@ body {
 }
 
 
-/* Section */
+/* Section Research */
 .section-research-header > .title {
 	font-size: 3rem;	
 	font-weight: 700;
@@ -85,6 +85,12 @@ body {
 	font-family: Consolas;
 }
 
+.section-research-body > .hr {
+	text-align: left;
+	margin-top: 5rem;
+	margin-left: 0;
+	color: #AAAAAA !important
+}
 
 /* Section */
 .section-title {
@@ -93,21 +99,9 @@ body {
 	line-height: 3rem;
 }
 
-.section-hr {
-	text-align: left;
-	margin-top: 5rem;
-	margin-left: 0;
-	color: #AAAAAA !important
-}
-
 .section-padding {
 	padding-top: 1.5rem;
 }
-
-.sectioin-research-padding {
-	padding-top: 5rem;
-}
-
 
 .about-me-description {
 	font-size: 1.25rem;
