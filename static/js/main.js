@@ -9,7 +9,7 @@ $('.scroll-btn').click(function(e) {
 });
 
 
-$(window).on("scroll", function(){    
+$(window).on("scroll", function(){
     if ( $( this ).scrollTop() > 200 ) {
         $( '.scroll-btn' ).fadeIn();
     } else {

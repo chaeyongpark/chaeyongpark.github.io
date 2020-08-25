@@ -115,6 +115,11 @@ body {
 	color: black !important;
 }
 
+.citation-panel {
+	background-color: #8FB6D4 !important;
+	border-radius: 5%;
+}
+
 .my-name {
 	font-weight: 700;
 }
