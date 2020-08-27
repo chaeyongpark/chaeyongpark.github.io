@@ -21,16 +21,12 @@ $(window).on("scroll", function(){
 $(function() {
   $("#CHI2020-Phantom-sensation #citation-bibtex").click( function() {
   	if ($(this).text().includes("BIBTEX")) {
-  		alert("YES");
+  		$("#CHI2020-Phantom-sensation citation description").text("CITATION");
+  		$(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
   	} else {
-  		alert("NO");
+  		$("#CHI2020-Phantom-sensation citation description").text("ORIGINAL");
+  		$(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
   	}
-    /*if($(this).html() == 'BIBTEX') {
-      $("#CHI2020:Phantom-sensation citation description").text("CHANGE");
-    }
-    else {
-      $(this).html('접기');
-    }*/
   });
 });
 
