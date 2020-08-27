@@ -23,19 +23,19 @@ $(function() {
   	if ($(this).text().includes("BIBTEX")) {
   		$("#CHI2020-Phantom-sensation .description").html("@inproceedings{Kim2019:Phantom,<br>\
   			&nbsp;&nbsp;author = {Kim, Jinsoo and Oh, Seungjae and Park, Chaeyong and Choi, Seungmoon},<br>\
-			title = {Body-Penetrating Tactile Phantom Sensations},<br>\
-			year = {2020},<br>\
-			isbn = {9781450367080},<br>\
-			publisher = {Association for Computing Machinery},<br>\
-			address = {New York, NY, USA},<br>\
-			url = {https://doi.org/10.1145/3313831.3376619},<br>\
-			doi = {10.1145/3313831.3376619},<br>\
-			booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>\
-			pages = {1–13},<br>\
-			numpages = {13},<br>\
-			keywords = {vibrotactile feedback, phantom sensation, tactile illusion, penetrating tactile sensation},<br>\
-			location = {Honolulu, HI, USA},<br>\
-			series = {CHI '20}<br>\
+			&nbsp;&nbsp;title = {Body-Penetrating Tactile Phantom Sensations},<br>\
+			&nbsp;&nbsp;year = {2020},<br>\
+			&nbsp;&nbsp;isbn = {9781450367080},<br>\
+			&nbsp;&nbsp;publisher = {Association for Computing Machinery},<br>\
+			&nbsp;&nbsp;address = {New York, NY, USA},<br>\
+			&nbsp;&nbsp;url = {https://doi.org/10.1145/3313831.3376619},<br>\
+			&nbsp;&nbsp;doi = {10.1145/3313831.3376619},<br>\
+			&nbsp;&nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>\
+			&nbsp;&nbsp;pages = {1–13},<br>\
+			&nbsp;&nbsp;numpages = {13},<br>\
+			&nbsp;&nbsp;keywords = {vibrotactile feedback, phantom sensation, tactile illusion, penetrating tactile sensation},<br>\
+			&nbsp;&nbsp;location = {Honolulu, HI, USA},<br>\
+			&nbsp;&nbsp;series = {CHI '20}<br>\
 			}");
   		$(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
   	} else {
@@ -50,8 +50,8 @@ $(function() {
 		var $temp = $("<input>");
 		$("body").append($temp);
 		$temp.val($("#CHI2020-Phantom-sensation .description").text()).select();
+		$temp.val($("#CHI2020-Phantom-sensation .description").text()).select();
 		document.execCommand("copy");
 		$temp.remove();
-  		//copyText.setSelectionRange(0, 99999); 
 	});
 });
