@@ -35,8 +35,8 @@ $(function() {
 		var $temp = $("<input>");
 		$("body").append($temp);
 		$temp.val($("#CHI2020-Phantom-sensation .description").text()).select();
-		$temp.val($("#CHI2020-Phantom-sensation .description").text()).select();
 		document.execCommand("copy");
 		$temp.remove();
+		M.toast({html: 'COPY TO CLIPBOARD'});
 	});
 });
