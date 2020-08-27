@@ -13,7 +13,7 @@ body {
 }
 
 .main-color {
-    background-color: #335B7A !important
+    background-color: #4384C2 !important
 }
 
 .il-pink-text {
@@ -27,7 +27,6 @@ body {
 .main-color-text {
 	color: #335B7A !important
 }
-
 
 
 .brand-logo-cy {
@@ -72,7 +71,14 @@ body {
 	margin-top: 3rem;
 }
 
-.section-research-body .abstract {
+.section-research-body > .hr {
+	text-align: left;
+	margin-top: 5rem;
+	margin-left: 0;
+	color: #AAAAAA;
+}
+
+.research-abstract .abstract {
 	font-size: 1.4rem;
 	font-weight: 300;
 	margin-bottom: 1rem;
@@ -80,20 +86,21 @@ body {
 	line-height: 1.8rem;
 }
 
-.section-research-body .citation {
+.research-citation .citation {
 	background-color: #ECEFF1;
 	font-family: Consolas;
 }
 
-.section-research-body .citation .description {
+.research-citation .citation .description {
 	color: #37474F;
 }
 
-.section-research-body > .hr {
-	text-align: left;
-	margin-top: 5rem;
-	margin-left: 0;
-	color: #AAAAAA;
+.research-citation .btn {
+	margin-bottom: 1rem;
+    height: 3rem;
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 1.5rem;
 }
 
 /* Section */
