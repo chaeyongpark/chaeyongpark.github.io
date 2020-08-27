@@ -37,6 +37,8 @@ $(function() {
 		$temp.val($("#CHI2020-Phantom-sensation .description").text()).select();
 		document.execCommand("copy");
 		$temp.remove();
+
+		$(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
 		M.toast({html: 'COPY TO CLIPBOARD'});
 	});
 });
