@@ -19,7 +19,7 @@ $(window).on("scroll", function(){
 
 
 $(function() {
-  $("#CHI2020:Phantom-sensation citation-bibtex").click( function() {
+  $("#CHI2020:Phantom-sensation #citation-bibtex").click( function() {
   	var getTag = $(this).html();
   	alert(getTag);
     /*if($(this).html() == 'BIBTEX') {
