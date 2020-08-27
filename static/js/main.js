@@ -22,7 +22,7 @@ $(function() {
   $("#CHI2020-Phantom-sensation #citation-bibtex").click( function() {
   	if ($(this).text().includes("BIBTEX")) {
   		$("#CHI2020-Phantom-sensation .description").html("@inproceedings{Kim2019:Phantom,<br>\
-  			author = {Kim, Jinsoo and Oh, Seungjae and Park, Chaeyong and Choi, Seungmoon},<br>\
+  			&nbsp;&nbsp;author = {Kim, Jinsoo and Oh, Seungjae and Park, Chaeyong and Choi, Seungmoon},<br>\
 			title = {Body-Penetrating Tactile Phantom Sensations},<br>\
 			year = {2020},<br>\
 			isbn = {9781450367080},<br>\
@@ -47,10 +47,11 @@ $(function() {
 
 $(function() {
 	$("#CHI2020-Phantom-sensation #citation-copy").click( function() {
-  		var copyText = $("#CHI2020-Phantom-sensation .description").text();
-  		copyText.select();
-  		copyText.setSelectionRange(0, 99999); 
-
-  		document.execCommand("copy");
+		var $temp = $("<input>");
+		$("body").append($temp);
+		$temp.val($("#CHI2020-Phantom-sensation .description").text()).select();
+		document.execCommand("copy");
+		$temp.remove();
+  		//copyText.setSelectionRange(0, 99999); 
 	});
 });
