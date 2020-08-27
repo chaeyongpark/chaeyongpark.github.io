@@ -19,9 +19,12 @@ $(window).on("scroll", function(){
 
 
 $(function() {
-  $("#CHI2020:Phantom-sensation #citation-bibtex").click( function() {
-  	var getTag = $(this).html();
-  	alert(getTag);
+  $("#CHI2020-Phantom-sensation #citation-bibtex").click( function() {
+  	if ($(this).text().includes("BIBTEX")) {
+  		alert("YES");
+  	} else {
+  		alert("NO");
+  	}
     /*if($(this).html() == 'BIBTEX') {
       $("#CHI2020:Phantom-sensation citation description").text("CHANGE");
     }
