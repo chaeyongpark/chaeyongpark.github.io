@@ -21,21 +21,21 @@ $(window).on("scroll", function(){
 $(function() {
   $("#CHI2020-Phantom-sensation #citation-bibtex").click( function() {
   	if ($(this).text().includes("BIBTEX")) {
-  		$("#CHI2020-Phantom-sensation .description").text("@inproceedings{Kim2019:Phantom,<br> \
-  			author = {Kim, Jinsoo and Oh, Seungjae and Park, Chaeyong and Choi, Seungmoon},\n\r \
-			title = {Body-Penetrating Tactile Phantom Sensations},/\r/ \
-			year = {2020},\n\r \
-			isbn = {9781450367080},\n\r \
-			publisher = {Association for Computing Machinery},\n\r \
-			address = {New York, NY, USA},\n\r \
-			url = {https://doi.org/10.1145/3313831.3376619},\n\r \
-			doi = {10.1145/3313831.3376619},\n\r \
-			booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},\n\r \
-			pages = {1–13},\n\r \
-			numpages = {13},\n\r \
-			keywords = {vibrotactile feedback, phantom sensation, tactile illusion, penetrating tactile sensation},\n\r \
-			location = {Honolulu, HI, USA},\n\r \
-			series = {CHI '20}\n\r \
+  		$("#CHI2020-Phantom-sensation .description").text("@inproceedings{Kim2019:Phantom,<br>\
+  			author = {Kim, Jinsoo and Oh, Seungjae and Park, Chaeyong and Choi, Seungmoon},<br>\
+			title = {Body-Penetrating Tactile Phantom Sensations},<br>\
+			year = {2020},<br>\
+			isbn = {9781450367080},<br>\
+			publisher = {Association for Computing Machinery},<br>\
+			address = {New York, NY, USA},<br>\
+			url = {https://doi.org/10.1145/3313831.3376619},<br>\
+			doi = {10.1145/3313831.3376619},<br>\
+			booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>\
+			pages = {1–13},<br>\
+			numpages = {13},<br>\
+			keywords = {vibrotactile feedback, phantom sensation, tactile illusion, penetrating tactile sensation},<br>\
+			location = {Honolulu, HI, USA},<br>\
+			series = {CHI '20}<br>\
 			}");
   		$(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
   	} else {
