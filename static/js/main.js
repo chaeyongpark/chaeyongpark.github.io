@@ -17,7 +17,7 @@ $(window).on("scroll", function(){
     }
 });
 
-
+/* CHI 2020 */
 $(function() {
   $("#CHI2020-Phantom-sensation #citation-bibtex").click( function() {
   	if ($(this).text().includes("BIBTEX")) {
@@ -45,3 +45,12 @@ $(function() {
   });
 });
 
+$(function() {
+	$("#CHI2020-Phantom-sensation #citation-copy").click( function() {
+  		var copyText = $("#CHI2020-Phantom-sensation .description").text();
+  		copyText.select();
+  		copyText.setSelectionRange(0, 99999); 
+
+  		document.execCommand("copy");
+	});
+});
