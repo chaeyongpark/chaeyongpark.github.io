@@ -21,7 +21,7 @@ $(window).on("scroll", function(){
 $(function() {
   $("#CHI2020-Phantom-sensation #citation-bibtex").click( function() {
   	if ($(this).text().includes("BIBTEX")) {
-  		$("#CHI2020-Phantom-sensation.description").text("@inproceedings{Kim2019:Phantom,\n\r \
+  		$("#CHI2020-Phantom-sensation .description").text("@inproceedings{Kim2019:Phantom,\n\r \
   			author = {Kim, Jinsoo and Oh, Seungjae and Park, Chaeyong and Choi, Seungmoon},\n\r \
 			title = {Body-Penetrating Tactile Phantom Sensations},\n\r \
 			year = {2020},\n\r \
