@@ -13,7 +13,7 @@ body {
 }
 
 .main-color {
-    background-color: #4384C2 !important
+    background-color: #335B7A !important
 }
 
 .il-pink-text {
@@ -98,9 +98,10 @@ body {
 .research-citation .btn {
 	margin-bottom: 1rem;
     height: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 42px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-right: 1rem !important;
 }
 
 /* Section */
