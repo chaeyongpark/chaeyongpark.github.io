@@ -4,28 +4,32 @@ body {
 }
 
 /* Color */
-.il-pink {
-    background-color: #E5717F !important
+.cy-pink {
+    background-color: #E5717F !important;
 }
 
-.il-blue {
-    background-color: #335B7A !important
+.cy-blue {
+    background-color: #335B7A !important;
+}
+
+.cy-red {
+	background-color: #EF4C56 !important;
 }
 
 .main-color {
-    background-color: #335B7A !important
+    background-color: #335B7A !important;
 }
 
-.il-pink-text {
-    color: #E5717F !important
+.cy-pink-text {
+    color: #E5717F !important;
 }
 
-.il-blue-text {
-    color: #335B7A !important
+.cy-blue-text {
+    color: #335B7A !important;
 }
 
 .main-color-text {
-	color: #335B7A !important
+	color: #335B7A !important;
 }
 
 
@@ -34,8 +38,8 @@ body {
 	white-space: nowrap;
 }
 
-.navbar-menu > .li > .a {
-	font-size: 1.3rem;
+.nav .ul .a {
+	font-size: 1.2rem !important;
 }
 
 

@@ -1,13 +1,16 @@
 $(document).ready(function(){
-	$('.sidenav').sidenav();
+	$('.modal').modal();
 	$('.research-card').matchHeight();
 });
 
+
+/*
+ * Scroll Button
+ */
 $('.scroll-btn').click(function(e) {
     $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
     return false;
 });
-
 
 $(window).on("scroll", function(){
     if ( $( this ).scrollTop() > 200 ) {
@@ -17,7 +20,10 @@ $(window).on("scroll", function(){
     }
 });
 
-/* CHI 2020 */
+
+/*
+ * CHI 2020: Phantom Sensations
+ */
 $(function() {
   $("#CHI2020-Phantom-sensation #citation-bibtex").click( function() {
   	if ($(this).text().includes("BIBTEX")) {
