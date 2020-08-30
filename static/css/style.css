@@ -38,17 +38,22 @@ body {
 	white-space: nowrap;
 }
 
-.nav ul a {
+.nav a {
 	font-size: 1.1rem !important;
+}
+
+
+.modal {
+	width: 300px;
 }
 
 .modal-content {
 	text-align: center;
-
 }
+
 .modal-content a {
-	color: black;
-	font-weight: 700;
+	color: white;
+	font-weight: 600;
 }
 
 /* Section Research */
