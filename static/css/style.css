@@ -38,10 +38,18 @@ body {
 	white-space: nowrap;
 }
 
-.nav .ul .a {
-	font-size: 1.2rem !important;
+.nav ul a {
+	font-size: 1.1rem !important;
 }
 
+.modal-content {
+	text-align: center;
+
+}
+.modal-content a {
+	color: black;
+	font-weight: 700;
+}
 
 /* Section Research */
 .section-research-header > .title {
