@@ -54,22 +54,22 @@ $(function() {
  * WHC 2019: Multimodal Haptic Rendering
  */
 $(function() {
-  $("#WHC2019:Multimodal-rendering").click( function() {
+  $("#WHC2019-Multimodal-rendering").click( function() {
     if ($(this).text().includes("BIBTEX")) {
-      $("#WHC2019:Multimodal-rendering .description").html("@inproceedings{Park2019:Multimodal:,<br>&nbsp;&nbsp;author = {Park, Chaeyong and Park, Jaeyoung and Oh, Seungjae and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Realistic Haptic Rendering of Collision Effects Using Multimodal Vibrotactile and Impact Feedback},<br>&nbsp;&nbsp;year = {2019},<br>&nbsp;&nbsp;isbn = {9781538694619},<br>&nbsp;&nbsp;publisher = {IEEE},<br>&nbsp;&nbsp;url = {https://doi.org/10.1109/WHC.2019.8816116},<br>&nbsp;&nbsp;doi = {10.1109/WHC.2019.8816116},<br>&nbsp;&nbsp;booktitle = {2019 IEEE World Haptics Conference (WHC)},<br>&nbsp;&nbsp;pages = {449-454},<br>&nbsp;&nbsp;numpages = {6},<br>&nbsp;&nbsp;keywords = {Haptic interfaces, Actuators, Vibrations, Rendering (computer graphics), Engines, Force},<br>&nbsp;&nbsp;location = {Tokyo, Japan},<br>&nbsp;&nbsp;series = {WHC'19}<br>}");
+      $("#WHC2019-Multimodal-rendering .description").html("@inproceedings{Park2019:Multimodal:,<br>&nbsp;&nbsp;author = {Park, Chaeyong and Park, Jaeyoung and Oh, Seungjae and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Realistic Haptic Rendering of Collision Effects Using Multimodal Vibrotactile and Impact Feedback},<br>&nbsp;&nbsp;year = {2019},<br>&nbsp;&nbsp;isbn = {9781538694619},<br>&nbsp;&nbsp;publisher = {IEEE},<br>&nbsp;&nbsp;url = {https://doi.org/10.1109/WHC.2019.8816116},<br>&nbsp;&nbsp;doi = {10.1109/WHC.2019.8816116},<br>&nbsp;&nbsp;booktitle = {2019 IEEE World Haptics Conference (WHC)},<br>&nbsp;&nbsp;pages = {449-454},<br>&nbsp;&nbsp;numpages = {6},<br>&nbsp;&nbsp;keywords = {Haptic interfaces, Actuators, Vibrations, Rendering (computer graphics), Engines, Force},<br>&nbsp;&nbsp;location = {Tokyo, Japan},<br>&nbsp;&nbsp;series = {WHC'19}<br>}");
       $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
     } else {
-      $("#WHC2019:Multimodal-rendering .description").text("Chaeyong Park, Jaeyoung Park, Seungjae Oh, and Seungmoon Choi. 2019. Realistic Haptic Rendering of Collision Effects Using Multimodal Vibrotactile and Impact Feedback. In Proceedings of the IEEE World Haptics Conference 2019 (WHC '19). IEEE, 449-454. DOI:https://doi.org/10.1109/WHC.2019.8816116");
+      $("#WHC2019-Multimodal-rendering .description").text("Chaeyong Park, Jaeyoung Park, Seungjae Oh, and Seungmoon Choi. 2019. Realistic Haptic Rendering of Collision Effects Using Multimodal Vibrotactile and Impact Feedback. In Proceedings of the IEEE World Haptics Conference 2019 (WHC '19). IEEE, 449-454. DOI:https://doi.org/10.1109/WHC.2019.8816116");
       $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
     }
   });
 });
 
 $(function() {
-  $("#WHC2019:Multimodal-rendering #citation-copy").click( function() {
+  $("#WHC2019-Multimodal-rendering #citation-copy").click( function() {
     var $temp = $("<input>"); 
     $("body").append($temp);
-    $temp.val($("#WHC2019:Multimodal-rendering .description").text()).select();
+    $temp.val($("#WHC2019-Multimodal-rendering .description").text()).select();
     document.execCommand("copy");
     $temp.remove();
 
