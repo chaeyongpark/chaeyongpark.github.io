@@ -77,3 +77,31 @@ $(function() {
     M.toast({html: 'COPY TO CLIPBOARD'});
   });
 });
+
+/*
+ * AH 2018: Viscoelastic rendering
+ */
+$(function() {
+  $("#AH2018-Viscoelastic-rendering #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#AH2018-Viscoelastic-rendering .description").html("@inproceedings{Cha2018:Viscoelastic:,<br>&nbsp;&nbsp;author = {Cha, Hojun and Amit, Bhardwaj and Park, Chaeyong and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Random Forest for Modeling and Rendering of Viscoelastic Deformable Objects},<br>&nbsp;&nbsp;year = {2019},<br>&nbsp;&nbsp;isbn = {9789811331947},<br>&nbsp;&nbsp;publisher = {Springer},<br>&nbsp;&nbsp;url = {https://doi.org/10.1007/978-981-13-3194-7_10},<br>&nbsp;&nbsp;doi = {10.1007/978-981-13-3194-7_10},<br>&nbsp;&nbsp;booktitle = {Haptic Interaction},<br>&nbsp;&nbsp;pages = {1-6},<br>&nbsp;&nbsp;numpages = {6},<br>&nbsp;&nbsp;location = {Incheon, Korea},<br>&nbsp;&nbsp;series = {AsiaHaptics'18}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#AH2018-Viscoelastic-rendering .description").text("Hojun Cha, Amit Bhardwaj, Chaeyong Park, and Seungmoon Choi. 2018. Random Forest for Modeling and Rendering of Viscoelastic Deformable Objects. In Proceedings of the International AsiaHaptics conference (AsiaHaptics '18). Springer, 48-53. DOI:https://doi.org/10.1007/978-981-13-3194-7_10");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#AH2018-Viscoelastic-rendering #citation-copy").click( function() {
+    var $temp = $("<input>"); 
+    $("body").append($temp);
+    $temp.val($("#AH2018-Viscoelastic-rendering .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
