@@ -27,7 +27,7 @@ $(window).on("scroll", function(){
 $(function() {
   $("#CHI2020-Phantom-sensation #citation-bibtex").click( function() {
   	if ($(this).text().includes("BIBTEX")) {
-  		$("#CHI2020-Phantom-sensation .description").html("@inproceedings{Kim2019:Phantom,<br>&nbsp;&nbsp;author = {Kim, Jinsoo and Oh, Seungjae and Park, Chaeyong and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Body-Penetrating Tactile Phantom Sensations},<br>&nbsp;&nbsp;year = {2020},<br>&nbsp;&nbsp;isbn = {9781450367080},<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},<br>&nbsp;&nbsp;address = {New York, NY, USA},<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3313831.3376619},<br>&nbsp;&nbsp;doi = {10.1145/3313831.3376619},<br>&nbsp;&nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp;&nbsp;pages = {1–13},<br>&nbsp;&nbsp;numpages = {13},<br>&nbsp;&nbsp;keywords = {vibrotactile feedback, phantom sensation, tactile illusion, penetrating tactile sensation},<br>&nbsp;&nbsp;location = {Honolulu, HI, USA},<br>&nbsp;&nbsp;series = {CHI '20}<br>}");
+  		$("#CHI2020-Phantom-sensation .description").html("@inproceedings{Kim2020:Phantom,<br>&nbsp;&nbsp;author = {Kim, Jinsoo and Oh, Seungjae and Park, Chaeyong and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Body-Penetrating Tactile Phantom Sensations},<br>&nbsp;&nbsp;year = {2020},<br>&nbsp;&nbsp;isbn = {9781450367080},<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},<br>&nbsp;&nbsp;address = {New York, NY, USA},<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3313831.3376619},<br>&nbsp;&nbsp;doi = {10.1145/3313831.3376619},<br>&nbsp;&nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp;&nbsp;pages = {1–13},<br>&nbsp;&nbsp;numpages = {13},<br>&nbsp;&nbsp;keywords = {vibrotactile feedback, phantom sensation, tactile illusion, penetrating tactile sensation},<br>&nbsp;&nbsp;location = {Honolulu, HI, USA},<br>&nbsp;&nbsp;series = {CHI '20}<br>}");
   		$(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
   	} else {
   		$("#CHI2020-Phantom-sensation .description").text("Jinsoo Kim, Seungjae Oh, Chaeyong Park, and Seungmoon Choi. 2020. Body-Penetrating Tactile Phantom Sensations. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI '20). ACM, New York, 1–13. DOI:https://doi.org/10.1145/3313831.3376619");
@@ -98,6 +98,34 @@ $(function() {
     var $temp = $("<input>"); 
     $("body").append($temp);
     $temp.val($("#AH2018-Viscoelastic-rendering .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
+
+/*
+ * CHI 2019: Vibeye
+ */
+$(function() {
+  $("#CHI2019-Vibeye #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#CHI2019-Vibeye .description").html("@inproceedings{Oh2019:Vibeye,<br>&nbsp;&nbsp;author = {Oh, Seungjae and Yun, Gyeore and Park, Chaeyong and Kim, Jinsoo and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {VibEye: Vibration-Mediated Object Recognition for Tangible Interactive Applications},<br>&nbsp;&nbsp;year = {2019},<br>&nbsp;&nbsp;isbn = {9781450359702},<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},<br>&nbsp;&nbsp;address = {New York, NY, USA},<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3290605.3300906},<br>&nbsp;&nbsp;doi = {10.1145/3290605.3300906},<br>&nbsp;&nbsp;booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems},<br>&nbsp;&nbsp;pages = {1–12},<br>&nbsp;&nbsp;numpages = {12},<br>&nbsp;&nbsp;keywords = {vibration-based sensing, virtual reality, passive haptics, tangible interaction, augmented reality, object recognition},<br>&nbsp;&nbsp;location = {Glasgow, Scotland Uk},<br>&nbsp;&nbsp;series = {CHI '19}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#CHI2019-Vibeye .description").text("Seungjae Oh, Gyeore Yun, Chaeyong Park, Jinsoo Kim, and Seungmoon Choi. 2019. VibEye: Vibration-Mediated Object Recognition for Tangible Interactive Applications. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI '19). ACM, 1–12. DOI:https://doi.org/10.1145/3290605.3300906");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#CHI2019-Vibeye #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#CHI2019-Vibeye .description").text()).select();
     document.execCommand("copy");
     $temp.remove();
 
