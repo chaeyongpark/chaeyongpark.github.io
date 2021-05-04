@@ -168,7 +168,7 @@ $(function() {
 $(function() {
   $("#TOH2021-Length-perception #citation-bibtex").click( function() {
     if ($(this).text().includes("BIBTEX")) {
-      $("#TOH2021-Length-perception .description").html("@article{Park2021:Lengthperception,<br>&nbsp;&nbsp;author = {Park, Chaeyong and Kim, Jinsoo and Choi, Seungmoon},<br>&nbsp;&nbsp;journal={IEEE Transactions on Haptics},<br>&nbsp;&nbsp;title={Length Perception Model for Hand-held Controllers: The Effects of Diameter and Inertia},<br>&nbsp;&nbsp;year={2021},<br>&nbsp;&nbsp;volume={X},<br>&nbsp;&nbsp;number={X},<br>&nbsp;&nbsp;pages={XX-XX},<br>&nbsp;&nbsp;doi={}<br>}");
+      $("#TOH2021-Length-perception .description").html("@article{Park2021:Lengthperception,<br>&nbsp;&nbsp;author = {Park, Chaeyong and Kim, Jinsoo and Choi, Seungmoon},<br>&nbsp;&nbsp;journal={IEEE Transactions on Haptics},<br>&nbsp;&nbsp;title={Length Perception Model for Hand-held Controllers: The Effects of Diameter and Inertia},<br>&nbsp;&nbsp;year={2021},<br>&nbsp;&nbsp;volume={X},<br>&nbsp;&nbsp;number={X},<br>&nbsp;&nbsp;pages={XX-XX},<br>&nbsp;&nbsp;doi={https://doi.org/10.1109/TOH.2021.3077709}<br>}");
       $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
     } else {
       $("#TOH2021-Length-perception .description").text("Chaeyong Park, Jinsoo Kim, and Seungmoon Choi. Length Perception Model for Hand-held Controllers: The Effects of Diameter and Inertia. IEEE Transactions on Haptics, Vol. X, no. X. 2021 (Accepted)");
