@@ -189,3 +189,31 @@ $(function() {
     M.toast({html: 'COPY TO CLIPBOARD'});
   });
 });
+
+/*
+ * ADMT2021: Omnidirectional Tactile Sensor
+ */
+$(function() {
+  $("#ADMT2021-forcesensor #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#ADMT2021-forcesensor .description").html("@article{kim2021omnidirectional,<br>&nbsp;&nbsp;title={Omnidirectional Tactile Profiling Using a Deformable Pressure Sensor Array Based on Localized Piezoresistivity},<br>&nbsp;&nbsp;author={Kim, Jaehyun and Park, Doowon and Moon, Sungmin and Park, Chaeyong and Thiyagarajan, Kaliannan and Choi, Seungmoon and Hwang, Heeseon and Jeong, Unyong},<br>&nbsp;&nbsp;journal={Advanced Materials Technologies},<br>&nbsp;&nbsp;pages={2100688},<br>&nbsp;&nbsp;year={2021},<br>&nbsp;&nbsp;publisher={Wiley Online Library}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#ADMT2021-forcesensor .description").text("Jaehyun Kim, Doowon Park,Sungmin Moon, Chaeyong Park, Kaliannan Thiyagarajan, Seungmoon Choi, Heeseon Hwang, and Unyong Jeong. Omnidirectional Tactile Profiling Using a Deformable Pressure Sensor Array Based on Localized Piezoresistivity. Advanced Materials Technologies, 2100688. 2021");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#ADMT2021-forcesensor #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#ADMT2021-forcesensor .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});

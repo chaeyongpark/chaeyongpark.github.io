@@ -83,7 +83,7 @@ body {
 }
 
 .section-research-body .header {
-	font-size: 1.5rem;
+	font-size: 2.0rem;
 	font-weight: 700;
 	margin-top: 3rem;
 }
@@ -186,6 +186,17 @@ body {
 	margin-top: 2rem;
 	margin-left: 1rem;
 	font-size:  1rem;
+}
+
+.card-content > .figure-description {
+	text-align: left;
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: black !important;
+}
+
+.figure-vertical {
+	padding: 0 0rem !important;
 }
 
 .page-footer {
