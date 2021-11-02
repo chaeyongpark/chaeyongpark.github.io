@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chaeyong Park</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Chaeyong Park CV">
+        <meta name="author" content="Chaeyong Park">
+        
+        <!-- Compiled and minified CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./static/css/materialize.min.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+
+        <!-- JS -->
+        <script src="./static/js/jquery.min.js"></script>
+        <script src="./static/js/jquery.matchHeight-min.js"></script>
+        <script src="./static/js/materialize.min.js"></script>
+        <script src="./static/js/main.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106422406-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-106422406-2');
+        </script>
+    </head>
+    <body>
+        <header>
+            <!-- Navbar -->
+            <nav class="grey lighten-5">
+                <div class="container">
+                    <div class="nav-wrapper grey lighten-5">
+                        <a href="https://chaeyongpark.github.io" class="brand-logo brand-logo-cy black-text">CHAEYONG PARK</a>
+                        <ul class="right hide-on-med-and-down navbar-menu">
+                            <li><a href="./publications.html" class="black-text">PUBLICATIONS</a></li>
+                            <li><a href="./research.html" class="black-text">RESEARCH</a></li>
+                        </ul>
+                        <a href="#side-modal" class="modal-trigger black-text hide-on-large-only"><i class="material-icons">menu</i></a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Modal Structure -->
+            <div id="side-modal" class="modal">
+                <div class="modal-content main-color">
+                    <h4><a href="./publications.html">PUBLICATIONS</a></h4>
+                    <hr class="hr">
+                    <h4><a href="./research.html">RESEARCH</a></h4>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Scroll button -->
+            <div class="fixed-action-btn hide-on-small-only scroll-btn" style="bottom: 20px; right: 20px">
+                <a href="#" class="waves-effect btn-floating btn-large main-color">
+                    <i class="large material-icons">expand_less</i>
+                </a>
+            </div>
+
+            <section class="container section-research">
+                <!-- 
+
+                    HAPTIC RENDERING
+
+                -->
+                <div class="section-research-header section-padding" id="haptic-rendering">
+                    <div class="title">MULTIMODAL HAPTIC RENDERING</div>
+                    <div class="description">Combining vibrotactile and impact feedback</div>
+                </div>
+
+
+                <!-- WHC2019 -->
+                <div class="section-research-body" id="WHC2019-Multimodal-rendering">
+                    <hr class="hr" style="margin-top:1rem !important">
+                    <div class="title">Realistic Haptic Rendering of Collision Effects Using Multimodal Vibrotactile and Impact Feedback</div>
+                    <div class="conf">IEEE World Haptics Conference 2019 (WHC'19)</div>
+
+                    <!-- Abstract -->
+                    <div class="research-abstract">
+                        <div class="header">ABSTRACT</div>
+                        <div class="abstract">This paper addresses the potential benefits of multimodal haptic feedback combining vibrotactile and impact stimuli for the target domain of virtual collision simulation. In this hybrid approach, we complement the limitation of each modality with the advantage of the other modality. We present the design of a hybrid device including both vibration and impact actuators and a physics-based rendering method for realistic collision simulation. We also report a user study carried out to comparatively assess the subjective quality of haptic collision rendering using vibration only, impact only, and multimodal (vibration + impact) stimuli. Experimental results demonstrate that our multimodal approach can contribute to critically expanding the dynamic range of virtual collision simulation, especially between highly stiff objects.</div>
+                    </div>
+
+                    <!-- Video -->
+                    <div class="research-video row">
+                        <div class="col s12 l10 offset-l1">
+                            <div class="video-container">
+                                <iframe width="853" height="480" src="//www.youtube.com/embed/wjVvP031OLE" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Citation -->
+                    <div class="research-citation">
+                        <div class="header">FULL CITATION</div>
+                        <div class="card-panel citation">
+                            <span class="description">Chaeyong Park, Jaeyoung Park, Seungjae Oh, and Seungmoon Choi. 2019. Realistic Haptic Rendering of Collision Effects Using Multimodal Vibrotactile and Impact Feedback. In Proceedings of the IEEE World Haptics Conference 2019 (WHC '19). IEEE, 449-454. DOI:https://doi.org/10.1109/WHC.2019.8816116</span>
+                        </div>
+                        <div class="row">
+                            <a class="col s12 m3 l2 waves-effect waves-light btn cy-red" href="https://doi.org/10.1109/WHC.2019.8816116"><i class="tiny material-icons left">description</i>PAPER</a>
+                            <a class="col s12 m3 l2 waves-effect waves-light btn main-color" id="citation-bibtex"><i class="tiny material-icons left">autorenew</i>BIBTEX</a>
+                            <a class="col s12 m4 l3 waves-effect waves-light btn main-color" id="citation-copy"><i class="tiny material-icons left">content_copy</i>COPY TO CLIPBOARD</a>
+                        </div>
+                    </div>
+
+                    <!-- Figures -->
+                    <div class="research-figures">
+                        <div class="header">FIGURES</div>
+                            <div class="row" style="margin-top:1rem">
+                                <div class="row col s12 m6">
+                                    <div class="col s12 figure-vertical">
+                                        <div class="card hoverable publication-figure">
+                                            <div class="card-image">
+                                                <img src="./static/img/publications/whc2019/fig2.png">
+                                                <div class="card-content">
+                                                    <div class="figure-description">
+                                                        Structure and processes of multimodal haptic rendering
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 figure-vertical">
+                                        <div class="card hoverable publication-figure">
+                                            <div class="card-image">
+                                                <img src="./static/img/publications/whc2019/fig4.png">
+                                                <div class="card-content">
+                                                    <div class="figure-description">
+                                                        Screen shots. (Left) steel ball–steel plate. (Middle) wooden ball–wooden board. (Right) rubber ball–concrete block.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="card hoverable publication-figure">
+                                        <div class="card-image">
+                                            <img src="./static/img/publications/whc2019/fig5.png">
+                                            <div class="card-content">
+                                                <div class="figure-description">
+                                                    Acceleration profiles measured from our hybrid multimodal device for three pairs of virtual objects. The three objects in Fig. 4 made a free fall from the same height, and the resulting contact responses were recorded.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m12">
+                                    <div class="card hoverable publication-figure">
+                                        <div class="card-image">
+                                            <img src="./static/img/publications/whc2019/fig6.png">
+                                            <div class="card-content">
+                                                <div class="figure-description">
+                                                    Mean scores for three haptic rendering methods and three object pairs. Error bars represent standard errors. Pairs grouped by asterisks were significantly different by Tukeys HSD tests
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+        </main> 
+        <footer class="page-footer main-color white-text">
+            <div class="container">
+            &copy; 2021. Chaeyong Park
+            </div>
+        </footer>
+    </body>
+</html>
