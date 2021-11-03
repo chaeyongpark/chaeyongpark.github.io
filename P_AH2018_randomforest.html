@@ -71,41 +71,40 @@
 
                 -->
                 <div class="section-research-header section-padding" id="haptic-rendering">
-                    <div class="title">LENGTH PERCEPETION MODEL</div>
-                    <div class="description">Length perception model for the VR controller</div>
+                    <div class="title">VISCOELASTICITY RENDERING</div>
+                    <div class="description">with random forest algorithm</div>
                 </div>
 
 
                 <!-- WHC2019 -->
-                <div class="section-research-body" id="TOH2021-Length-perception">
+                <div class="section-research-body" id="AH2018-Viscoelastic-rendering">
                     <hr class="hr" style="margin-top:1rem !important">
-                    <div class="title">Length Perception Model for Hand-held Controllers: The Effects of Diameter and Inertia</div>
-                    <div class="conf">IEEE Transactions on Haptics, Vol. 14, no. 2. 2021</div>
+                    <div class="title">Random Forest for Modeling and Rendering of Viscoelastic Deformable Objects</div>
+                    <div class="conf">Asia Haptics 2018</div>
 
                     <!-- Abstract -->
                     <div class="research-abstract">
                         <div class="header">ABSTRACT</div>
-                        <div class="abstract">Typical handheld controllers for interaction in virtual reality (VR) have fixed shapes and sizes, regardless of what visual objects they represent. Resolving this crossmodal incongruence with a shape-changing interface is our long-term goal. In this paper, we seek to find a length perception model that considers the moment of inertia (MOI) and diameter of a handheld object based on the concept of dynamic touch. Such models serve as a basis for computational algorithms for shape changing. We carried out two perceptual experiments. In Experiment 1, we measured the perceived lengths of 24 physical objects with different MOIs and diameters. Then we obtained a length perception model to reproduce the desired perceived length with a handheld controller. In Experiment 2, we validated our model in a crossmodal matching scenario, where a visual rod was matched to a haptic rod in terms of the perceived length. Our results contribute to understanding the relationship between the perceived length and physical properties of a handheld object and designing shape-changing algorithms to render equivalent visual and haptic sensory cues for length perception in VR.</div>
+                        <div class="abstract">In the recent past, data-driven approaches have gained importance for modeling and rendering of haptic properties of deformable objects. In this paper, we propose a new data-driven approach based on a well known machine learning technique: random forest. We train the random forest for regression for estimating the input-output mapping between discrete-time interaction data (position/displacement and force) collected on a homogeneous deformable object. Unlike currently existing data-driven approaches, we use at most 1% of the recorded interaction data for the training of the random forest. Even then, the trained random forest model reproduces all the interactions used for the training with a good accuracy. This also provides promising results on unseen data. When employed for haptic rendering, the model estimates smooth and stable interaction forces at an update rate more than 650 Hz.</div>
                     </div>
 
-                    <!-- Video 
+                    <!-- Video -->
                     <div class="research-video row">
                         <div class="col s12 l10 offset-l1">
                             <div class="video-container">
-                                <iframe width="853" height="480" src="//www.youtube.com/embed/wjVvP031OLE" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="853" height="480" src="//www.youtube.com/embed/2r9Llfw--UY" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
-                    -->
 
                     <!-- Citation -->
                     <div class="research-citation">
                         <div class="header">FULL CITATION</div>
                         <div class="card-panel citation">
-                            <span class="description">Chaeyong Park, Jinsoo Kim, and Seungmoon Choi. Length Perception Model for Hand-held Controllers: The Effects of Diameter and Inertia. IEEE Transactions on Haptics, vol. 14, no. 2. 2021</span>
+                            <span class="description">Hojun Cha, Amit Bhardwaj, Chaeyong Park, and Seungmoon Choi. 2018. Random Forest for Modeling and Rendering of Viscoelastic Deformable Objects. In Proceedings of the International AsiaHaptics conference (AsiaHaptics '18). Springer, 48-53. DOI:https://doi.org/10.1007/978-981-13-3194-7_10</span>
                         </div>
                         <div class="row">
-                            <a class="col s12 m3 l2 waves-effect waves-light btn cy-red" href="https://doi.org/10.1109/TOH.2021.3077709" target="_blank"><i class="tiny material-icons left">description</i>PAPER</a>
+                            <a class="col s12 m3 l2 waves-effect waves-light btn cy-red" href="https://doi.org/10.1007/978-981-13-3194-7_10" target="_blank"><i class="tiny material-icons left">description</i>PAPER</a>
                             <a class="col s12 m3 l2 waves-effect waves-light btn main-color" id="citation-bibtex"><i class="tiny material-icons left">autorenew</i>BIBTEX</a>
                             <a class="col s12 m4 l3 waves-effect waves-light btn main-color" id="citation-copy"><i class="tiny material-icons left">content_copy</i>COPY TO CLIPBOARD</a>
                         </div>
@@ -115,13 +114,27 @@
                     <div class="research-figures">
                         <div class="header">FIGURES</div>
                             <div class="row" style="margin-top:1rem">
-                                <div class="col s12 m6">
-                                    <div class="card hoverable publication-figure">
-                                        <div class="card-image">
-                                            <img src="./static/img/publications/toh2021/fig1.png">
-                                            <div class="card-content">
-                                                <div class="figure-description">
-                                                    Length perception model estimating the perceived length of a handheld controller using its diameter (D) and moment of inertia (I) as input variables.
+                                <div class="row col s12 m6">
+                                    <div class="col s12 figure-vertical">
+                                        <div class="card hoverable publication-figure">
+                                            <div class="card-image">
+                                                <img src="./static/img/publications/ah2018/fig1.png">
+                                                <div class="card-content">
+                                                    <div class="figure-description">
+                                                        Data acquisition setup of our system. We used a force feedback device to acquire the position, a load cell for the force sensing.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 figure-vertical">
+                                        <div class="card hoverable publication-figure">
+                                            <div class="card-image">
+                                                <img src="./static/img/publications/ah2018/fig2.png">
+                                                <div class="card-content">
+                                                    <div class="figure-description">
+                                                        Measured position and response force signals for a typical (a) ramp and (b) creep force signals.
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -130,27 +143,16 @@
                                 <div class="col s12 m6">
                                     <div class="card hoverable publication-figure">
                                         <div class="card-image">
-                                            <img src="./static/img/publications/toh2021/fig3.png">
+                                            <img src="./static/img/publications/ah2018/fig3.png">
                                             <div class="card-content">
                                                 <div class="figure-description">
-                                                    A participant wielded the reference and comparison rods with the two hands without visual cues to build a length perception model.
+                                                    Force responses predicted by random forest modeling with 20,000 training samples: (a)–(b) and (c)–(d) are for ramp and creep data, respectively. Left column: high range of force; Right column: low range of force. Measured position and response force signals for a typical (e) ramp and (f) creep controlled force signals.
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col s12">
-                                    <div class="card hoverable publication-figure">
-                                        <div class="card-image">
-                                            <img src="./static/img/publications/toh2021/fig4.png">
-                                            <div class="card-content">
-                                                <div class="figure-description">
-                                                    Results of Experiment 1. (Left) The length perception model in a 3D plot. (Right) 2D plots. Error bars represent standard errors. The length perception model indicates that the perceived length increases as the MOI I increases if the handle diameter D is fixed. In additions, for fixed I, the perceived length decreases as D increases.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

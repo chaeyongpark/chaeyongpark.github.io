@@ -140,7 +140,7 @@ $(function() {
 $(function() {
   $("#UIST2020-Programmable-button #citation-bibtex").click( function() {
     if ($(this).text().includes("BIBTEX")) {
-      $("#UIST2020-Programmable-button .description").html("@inproceedings{Park2020:Augmentedbutton,<br>&nbsp;&nbsp;author = {Park, Chaeyong and Yoon, Jinhyuk and Oh, Seungjae and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Augmenting Physical Buttons with Vibrotactile Feedback for Programmable Feels},<br>&nbsp;&nbsp;year = {2020},<br>&nbsp;&nbsp;isbn = {-},<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},<br>&nbsp;&nbsp;address = {New York, NY, USA},<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3379337.3415837},<br>&nbsp;&nbsp;doi = {10.1145/3379337.3415837},<br>&nbsp;&nbsp;booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems},<br>&nbsp;&nbsp;pages = {1–14},<br>&nbsp;&nbsp;numpages = {14},<br>&nbsp;&nbsp;keywords = {Button; Vibrotactile; Haptics; Augmented reality; Multimodal},<br>&nbsp;&nbsp;location = {Virtual Event, USA},<br>&nbsp;&nbsp;series = {UIST '20}<br>}");
+      $("#UIST2020-Programmable-button .description").html("@inproceedings{Park2020:Augmentedbutton,<br>&nbsp;&nbsp;author = {Park, Chaeyong and Yoon, Jinhyuk and Oh, Seungjae and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Augmenting Physical Buttons with Vibrotactile Feedback for Programmable Feels},<br>&nbsp;&nbsp;year = {2020},<br>&nbsp;&nbsp;isbn = {9781450375146},<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},<br>&nbsp;&nbsp;address = {New York, NY, USA},<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3379337.3415837},<br>&nbsp;&nbsp;doi = {10.1145/3379337.3415837},<br>&nbsp;&nbsp;booktitle = {Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},<br>&nbsp;&nbsp;pages = {924–937},<br>&nbsp;&nbsp;numpages = {14},<br>&nbsp;&nbsp;keywords = {Button; Vibrotactile; Haptics; Augmented reality; Multimodal},<br>&nbsp;&nbsp;location = {Virtual Event, USA},<br>&nbsp;&nbsp;series = {UIST '20}<br>}");
       $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
     } else {
       $("#UIST2020-Programmable-button .description").text("Chaeyong Park, Jinhyuk Yoon, Seungjae Oh, and Seungmoon Choi. 2020. Augmenting Physical Buttons with Vibrotactile Feedback for Programmable Feels. In Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (UIST '20). ACM, 1–14. DOI:https://doi.org/10.1145/3379337.3415837");
@@ -210,6 +210,34 @@ $(function() {
     var $temp = $("<input>");
     $("body").append($temp);
     $temp.val($("#ADMT2021-forcesensor .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
+
+/*
+ * UIST 2021: Finger Identification
+ */
+$(function() {
+  $("#UIST2021-Finger-identification #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#UIST2021-Finger-identification .description").html("@inproceedings{Oh2021:FingerIdentification,<br>&nbsp;&nbsp;author = {Oh, Seungjae and Park, Chaeyong and Jeon, Yo-Seb and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Identifying Contact Fingers on Touch Sensitive Surfaces by Ring-Based Vibratory Communication},<br>&nbsp;&nbsp;year = {2021},<br>&nbsp;&nbsp;isbn = {9781450386357},<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},&nbsp;&nbsp;address = {New York, NY, USA},<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3472749.3474745},<br>&nbsp;&nbsp;doi = {10.1145/3472749.3474745},<br>&nbsp;&nbsp;booktitle = {The 34th Annual ACM Symposium on User Interface Software and Technology},<br>&nbsp;&nbsp;pages = {208–222},<br>&nbsp;&nbsp;numpages = {15},<br>&nbsp;&nbsp;keywords = {Vibratory Communication, Finger Identification, Vibration Sensing, Touch Interaction},<br>&nbsp;&nbsp;location = {Virtual Event, USA},<br>&nbsp;&nbsp;series = {UIST '21}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#UIST2021-Finger-identification .description").text("Seungjae Oh, Chaeyong Park, Yo-Seb Jeon, and Seungmoon Choi. 2021. Identifying Contact Fingers on Touch Sensitive Surfaces by Ring-Based Vibratory Communication. In Proceedings of the 34th Annual ACM Symposium on User Interface Software and Technology (UIST '21). ACM, 208–222. DOI:https://doi.org/10.1145/3472749.3474745");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#UIST2021-Finger-identification #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#UIST2021-Finger-identification .description").text()).select();
     document.execCommand("copy");
     $temp.remove();
 
