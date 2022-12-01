@@ -140,14 +140,14 @@ body {
 
 .card-content > .research-title {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 600;
 	color: black !important;
 }
 
 .card-content > .research-description {
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: 300;
 	color: black !important;
 }
