@@ -280,7 +280,7 @@ $(function() {
 $(function() {
   $("#ADMT2022-shearsensor #citation-bibtex").click( function() {
     if ($(this).text().includes("BIBTEX")) {
-      $("#ADMT2022-shearsensor .description").html("@article{suh2022small,<br>&nbsp;&nbsp;title={Small-Sized Deformable Shear Sensor Array for Direct Monitoring of Quantitative Shear Distribution},<br>&nbsp;&nbsp;author={Suh, Wonjeong and Park, Chaeyong and Oh, Joosung and Moon, Sungmin and Choi, Seungmoon and Kim, Youn Soo and Jeong, Unyong},<br>&nbsp;&nbsp;journal={Advanced Materials Technologies},<br>&nbsp;&nbsp;volume={7},<br>&nbsp;&nbsp;number={6},<br>&nbsp;&nbsp;pages={2101071},<br>&nbsp;&nbsp;year={2022},<br>&nbsp;&nbsp;publisher={Wiley Online Library}<br>}");
+      $("#ADMT2022-shearsensor .description").html("@article{Suh2022:shearsensor,<br>&nbsp;&nbsp;title={Small-Sized Deformable Shear Sensor Array for Direct Monitoring of Quantitative Shear Distribution},<br>&nbsp;&nbsp;author={Suh, Wonjeong and Park, Chaeyong and Oh, Joosung and Moon, Sungmin and Choi, Seungmoon and Kim, Youn Soo and Jeong, Unyong},<br>&nbsp;&nbsp;journal={Advanced Materials Technologies},<br>&nbsp;&nbsp;volume={7},<br>&nbsp;&nbsp;number={6},<br>&nbsp;&nbsp;pages={2101071},<br>&nbsp;&nbsp;year={2022},<br>&nbsp;&nbsp;publisher={Wiley Online Library}<br>}");
       $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
     } else {
       $("#ADMT2022-shearsensor .description").text("Wonjeong Suh, Chaeyong Park, Joosung Oh, Sungmin Moon, Seungmoon Choi, Yeonsoo Kim, and Unyong Jeong. Small-sized Deformable Shear Sensor Array for Direct Monitoring the Quantitative Shear Distribution. Advanced Materials Technologies, Vol. 7, No. 6, 2101071. 2022");
