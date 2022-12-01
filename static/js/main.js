@@ -273,3 +273,59 @@ $(function() {
     M.toast({html: 'COPY TO CLIPBOARD'});
   });
 });
+
+/*
+ * ADMT 2022: Shear Sensor
+ */
+$(function() {
+  $("#ADMT2022-shearsensor #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#ADMT2022-shearsensor .description").html("@article{suh2022small,<br>&nbsp;&nbsp;title={Small-Sized Deformable Shear Sensor Array for Direct Monitoring of Quantitative Shear Distribution},<br>&nbsp;&nbsp;author={Suh, Wonjeong and Park, Chaeyong and Oh, Joosung and Moon, Sungmin and Choi, Seungmoon and Kim, Youn Soo and Jeong, Unyong},<br>&nbsp;&nbsp;journal={Advanced Materials Technologies},<br>&nbsp;&nbsp;volume={7},<br>&nbsp;&nbsp;number={6},<br>&nbsp;&nbsp;pages={2101071},<br>&nbsp;&nbsp;year={2022},<br>&nbsp;&nbsp;publisher={Wiley Online Library}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#ADMT2022-shearsensor .description").text("Wonjeong Suh, Chaeyong Park, Joosung Oh, Sungmin Moon, Seungmoon Choi, Yeonsoo Kim, and Unyong Jeong. Small-sized Deformable Shear Sensor Array for Direct Monitoring the Quantitative Shear Distribution. Advanced Materials Technologies, Vol. 7, No. 6, 2101071. 2022");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#ADMT2022-shearsensor #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#ADMT2022-shearsensor .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
+
+/*
+ * EURO 2022: Information Transmissio Capacity of Multimodal Stimuli
+ */
+$(function() {
+  $("#EURO2022-multimodalIT #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#EURO2022-multimodalIT .description").html("@inproceedings{Park2022:multimodal_IT,<br>&nbsp;&nbsp;title={A Preliminary Study on the Perceptual Independence Between Vibrotactile and Thermal Senses},<br>&nbsp;&nbsp;author={Park, Jaejun and Kim, Jeongwoo and Park, Chaeyong and Oh, Seungjae and Park, Junseok and Choi, Seungmoon},<br>&nbsp;&nbsp;booktitle={International Conference on Human Haptic Sensing and Touch Enabled Computer Applications},<br>&nbsp;&nbsp;pages={75--83},<br>&nbsp;&nbsp;year={2022},<br>&nbsp;&nbsp;organization={Springer}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#EURO2022-multimodalIT .description").text("Jaejun Park, Jeongwoo Kim, Chaeyong Park, Seungjae Oh, and Seungmoon Choi. A Preliminary Study on the Perceptual Independence Between Vibrotactile and Thermal Senses. International Conference on Human Haptic Sensing and Touch Enabled Computer Applications (EuroHaptics'22). Springer, 75-83. https://doi.org/10.1007/978-3-031-06249-0_9");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#EURO2022-multimodalIT #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#EURO2022-multimodalIT .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
