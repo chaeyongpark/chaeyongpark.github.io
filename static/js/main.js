@@ -245,3 +245,31 @@ $(function() {
     M.toast({html: 'COPY TO CLIPBOARD'});
   });
 });
+
+/*
+ * CHI 2022: Augmented Button
+ */
+$(function() {
+  $("#CHI2022-Programmable-button #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#CHI2022-Programmable-button .description").html("@inproceedings{Park2022:Augmentedbutton,<br>&nbsp;&nbsp;author = {Park, Chaeyong and Kim, Jeongwoo and Kim, Dong-Geun and Oh, Seungjae and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Vibration-Augmented Buttons: Information Transmission Capacity and Application to Interaction Design},<br>&nbsp;&nbsp;year = {2022},<br>&nbsp;&nbsp;isbn = {9781450391573},<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},<br>&nbsp;&nbsp;address = {New York, NY, USA},<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3491102.3501849},<br>&nbsp;&nbsp;doi = {10.1145/3491102.3501849},<br>&nbsp;&nbsp;booktitle = {Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems},<br>&nbsp;&nbsp;articleno = {435},<br>&nbsp;&nbsp;numpages = {13},<br>&nbsp;&nbsp;location = {New Orleans, LA, USA},<br>&nbsp;&nbsp;series = {CHI '22}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#CHI2022-Programmable-button .description").text("Chaeyong Park, Jeongwoo Kim, Dong-Geun Kim, Seungjae Oh, and Seungmoon Choi. 2022. Vibration-Augmented Buttons: Information Transmission Capacity and Application to Interaction Design. In Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). Association for Computing Machinery, New York, NY, USA, Article 435, 1–13. https://doi.org/10.1145/3491102.3501849");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#CHI2022-Programmable-button #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#CHI2022-Programmable-button .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
