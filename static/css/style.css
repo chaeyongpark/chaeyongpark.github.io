@@ -167,6 +167,10 @@ body {
 	font-weight: 600;
 }
 
+.publication-extra {
+	font-size: 1.2rem;
+}
+
 .publication-authors {
 	margin-top: 0.5rem;
 	font-size: 1.1rem;
@@ -227,6 +231,7 @@ body {
 .news-medal {
 	color: #f8c159;
 }
+
 
 @media (max-width: 992px) { /* Tablet */
 	.card-content > .researchpage-title {
