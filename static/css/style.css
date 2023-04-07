@@ -217,6 +217,17 @@ body {
 	color: black !important;
 }
 
+.news-main {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+.news-bold {
+	font-weight: 700;
+}
+.news-medal {
+	color: #f8c159;
+}
+
 @media (max-width: 992px) { /* Tablet */
 	.card-content > .researchpage-title {
 		font-size: 2.5vw;
