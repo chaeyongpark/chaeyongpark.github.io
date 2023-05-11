@@ -329,3 +329,31 @@ $(function() {
     M.toast({html: 'COPY TO CLIPBOARD'});
   });
 });
+
+/*
+ * CHI 2023: Perception Model
+ */
+$(function() {
+  $("#CHI2023-perception-model #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#CHI2023-perception-model .description").html("@inproceedings{Park2023:Perceptionmodel,<br>&nbsp;&nbsp;author = {Park, Chaeyong and Kim, Jeongwoo and Choi, Seungmoon},<br>&nbsp;&nbsp;title = {Visuo-Haptic Crossmodal Shape Perception Model for Shape-Changing Handheld Controllers Bridged by Inertial Tensor},<br>&nbsp;&nbsp;year = {2023},<br>&nbsp;&nbsp;isbn = {9781450394215},<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},<br>&nbsp;&nbsp;address = {New York, NY, USA},<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3544548.3580724},<br>&nbsp;&nbsp;doi = {10.1145/3544548.3580724},<br>&nbsp;&nbsp;booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},<br>&nbsp;&nbsp;articleno = {699},<br>&nbsp;&nbsp;numpages = {18},<br>&nbsp;&nbsp;location = {Hamburg, Germany},<br>&nbsp;&nbsp;series = {CHI '23}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#CHI2023-perception-model .description").text("Chaeyong Park, Jeongwoo Kim, and Seungmoon Choi. 2023. Visuo-haptic Crossmodal Shape Perception Model for Shape-Changing Handheld Controllers Bridged by Inertial Tensor. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 699, 1–18. https://doi.org/10.1145/3544548.3580724");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#CHI2023-perception-model #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#CHI2023-perception-model .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
