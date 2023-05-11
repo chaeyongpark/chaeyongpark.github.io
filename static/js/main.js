@@ -357,3 +357,31 @@ $(function() {
     M.toast({html: 'COPY TO CLIPBOARD'});
   });
 });
+
+/*
+ * ADOM 2023: O-EV
+ */
+$(function() {
+  $("#ADOM2023-OEV #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#ADOM2023-OEV .description").html("@article{Lee2023:OEV,<br>&nbsp;&nbsp;title={Intrinsically Synchronized Flexible Visuo-Haptic Device Operated by Single External Electric Field},<br>&nbsp;&nbsp;author={Gilwoon Lee, Chaeyong Park, Doowon Park, Seungmoon Choi, and Unyong Jeong},<br>&nbsp;&nbsp;journal={Advanced Optical Materials},<br>&nbsp;&nbsp;volume={11},<br>&nbsp;&nbsp;number={7},<br>&nbsp;&nbsp;pages={2202515},<br>&nbsp;&nbsp;year={2023},<br>&nbsp;&nbsp;publisher={Wiley Online Library}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#ADOM2023-OEV .description").text("Gilwoon Lee, Chaeyong Park, Doowon Park, Seungmoon Choi, and Unyong Jeong. Intrinsically Synchronized Flexible Visuo-Haptic Device Operated by Single External Electric Field. Advanced Optical Materials, Vol. 11, No. 7, 2202515. 2023");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#ADOM2023-OEV #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#ADOM2023-OEV .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
