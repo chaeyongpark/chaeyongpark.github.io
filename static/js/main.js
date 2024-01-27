@@ -385,3 +385,31 @@ $(function() {
     M.toast({html: 'COPY TO CLIPBOARD'});
   });
 });
+
+/*
+ * WHC 2023: Perceived Simultaneity
+ */
+$(function() {
+  $("#WHC2023-Perceptual-simultaneity #citation-bibtex").click( function() {
+    if ($(this).text().includes("BIBTEX")) {
+      $("#WHC2023-Perceptual-simultaneity .description").html("@inproceedings{Park2023:PerceivedSimultaneity,<br>&nbsp;&nbsp;author={Park, Chaeyong and Choi, Seungmoon},<br>&nbsp;&nbsp;booktitle={2023 IEEE World Haptics Conference (WHC)},<br>&nbsp;&nbsp;title={Perceptual Simultaneity Between Vibrotactile and Impact Stimuli},<br>&nbsp;&nbsp;year={2023},<br>&nbsp;&nbsp;pages={148-155},<br>&nbsp;&nbsp;keywords={Vibrations;Torso;Sensitivity;Design methodology;Vibration measurement;Rendering (computer graphics);Haptic interfaces;Vibration;Impact;Multimodal Haptic Rendering;Simultaneity Judgment;Psychometric Function},<br>&nbsp;&nbsp;doi={10.1109/WHC56415.2023.10224459}<br>}");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>CITATION");
+    } else {
+      $("#WHC2023-Perceptual-simultaneity .description").text("Chaeyong Park and Seungmoon Choi. Perceptual Simultaneity Between Vibrotactile and Impact Stimuli. In Proceedings of the IEEE World Haptics Conference (Delft, Netherlands, July 10-13, 2023). WHC ’23. IEEE. pp. 148-155. DOI:https://doi.org/10.1109/WHC56415.2023.10224459");
+      $(this).html("<i class=\"tiny material-icons left\">autorenew</i>BIBTEX");
+    }
+  });
+});
+
+$(function() {
+  $("#WHC2023-Perceptual-simultaneity #citation-copy").click( function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#WHC2023-Perceptual-simultaneity .description").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    $(this).html("<i class=\"tiny material-icons left\">check</i>COPY TO CLIPBOARD");
+    M.toast({html: 'COPY TO CLIPBOARD'});
+  });
+});
