@@ -258,6 +258,22 @@ body {
 	.card-content > .researchpage-description {
 		font-size: 4vw;
 	}
+	.publication-title {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	.publication-extra {
+		font-size: 1.1rem;
+	}
+	.publication-authors {
+		font-size: 0.9rem;
+	}
+	.publication-informations {
+		font-size: 0.8rem;
+	}
+	.news-main {
+		font-size: 1.2rem;
+	}
 }
 
 .img-margin {
