@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News · Chaeyong Park</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #ffffff;
+      --surface: #fdf7f7;
+      --border: #ecdcdc;
+      --text-primary: #1a0a0a;
+      --text-secondary: #4a3535;
+      --text-muted: #8a6b6b;
+      --accent: #9b1b2a;
+      --accent-hover: #7d1522;
+      --max-w: 860px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .nav-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .nav-back {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    .nav-back:hover { color: var(--accent); }
+
+    /* ── Layout ── */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .news-count {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    /* ── News (same as index.html) ── */
+    .news-list { display: flex; flex-direction: column; }
+    .news-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .news-item:first-child { border-top: 1px solid var(--border); }
+    .news-date {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding-top: 1px;
+      white-space: nowrap;
+    }
+    .news-content {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+    .news-content strong { color: var(--text-primary); font-weight: 600; }
+    .news-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .badge-paper { background: #dbeafe; color: #1e40af; }
+    .badge-award { background: #fef3c7; color: #92400e; }
+    .badge-event { background: #d1fae5; color: #065f46; }
+
+    /* ── Pagination ── */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 32px;
+    }
+    .page-btn {
+      min-width: 34px;
+      height: 34px;
+      padding: 0 10px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .page-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+    .page-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .page-btn:disabled { opacity: 0.4; cursor: default; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Chaeyong Park</a>
+    <a class="nav-back" href="index.html">&larr; Back to Home</a>
+  </div>
+</nav>
+
+<main>
+  <h1>News</h1>
+  <p class="news-count" id="news-count"></p>
+  <div class="news-list" id="news-list"></div>
+  <div class="pagination" id="pagination"></div>
+</main>
+
+<footer>
+  <p>&copy; 2026 Chaeyong Park &nbsp;&middot;&nbsp; Department of Computer Science and Engineering, Korea University &nbsp;&middot;&nbsp;
+  <a href="mailto:chaeyong@korea.ac.kr">chaeyong@korea.ac.kr</a></p>
+</footer>
+
+<script src="news.js"></script>
+<script>
+  const PER_PAGE = 10;
+  const totalPages = Math.max(1, Math.ceil(NEWS.length / PER_PAGE));
+
+  function getPage() {
+    const p = parseInt(new URLSearchParams(location.search).get("page"), 10);
+    return Number.isFinite(p) ? Math.min(Math.max(p, 1), totalPages) : 1;
+  }
+
+  function show(page, push) {
+    const start = (page - 1) * PER_PAGE;
+    renderNewsItems(document.getElementById("news-list"), NEWS.slice(start, start + PER_PAGE));
+    document.getElementById("news-count").textContent =
+      `${NEWS.length} items · Page ${page} of ${totalPages}`;
+
+    const pg = document.getElementById("pagination");
+    if (totalPages === 1) { pg.innerHTML = ""; return; }
+    let html = `<button class="page-btn" data-page="${page - 1}" ${page === 1 ? "disabled" : ""}>&lsaquo; Prev</button>`;
+    for (let i = 1; i <= totalPages; i++) {
+      html += `<button class="page-btn${i === page ? " active" : ""}" data-page="${i}">${i}</button>`;
+    }
+    html += `<button class="page-btn" data-page="${page + 1}" ${page === totalPages ? "disabled" : ""}>Next &rsaquo;</button>`;
+    pg.innerHTML = html;
+
+    if (push) {
+      history.pushState({ page }, "", page === 1 ? location.pathname : `?page=${page}`);
+      window.scrollTo({ top: 0 });
+    }
+  }
+
+  document.getElementById("pagination").addEventListener("click", (e) => {
+    const btn = e.target.closest(".page-btn");
+    if (btn && !btn.disabled) show(parseInt(btn.dataset.page, 10), true);
+  });
+  window.addEventListener("popstate", () => show(getPage(), false));
+
+  show(getPage(), false);
+</script>
+
+</body>
+</html>

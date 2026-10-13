@@ -284,6 +284,18 @@
     .badge-paper { background: #dbeafe; color: #1e40af; }
     .badge-award { background: #fef3c7; color: #92400e; }
     .badge-event { background: #d1fae5; color: #065f46; }
+    .more-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .more-link:hover { color: var(--accent-hover); text-decoration: underline; }
+    .more-link svg { width: 13px; height: 13px; }
 
     /* ── Publications ── */
     .pub-list {
@@ -505,6 +517,31 @@
     <h2>Selected Publications</h2>
     <div class="pub-list">
 
+      <!-- Posture-Adaptive Azimuthal Guidance -->
+      <div class="pub-item">
+        <img class="pub-thumb" src="https://kuaxislab.github.io/images/publications/2026_ismar_a.png" alt="Posture-Adaptive Azimuthal Guidance teaser"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="pub-thumb-placeholder" style="display:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="color:var(--border);width:28px;height:28px">
+            <path d="M4 16l4.586-4.586a2 2 0 0 1 2.828 0L16 16m-2-2 1.586-1.586a2 2 0 0 1 2.828 0L20 14m-6-6h.01M6 20h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="pub-venue">IEEE TVCG (ISMAR 2026) &middot; 2026</div>
+          <div class="pub-title">Posture-Adaptive Azimuthal Guidance via a Forearm Vibrotactile Interface for VR Navigation</div>
+          <div class="pub-authors">Jaehyeong Hwang, Hyeseong Jin, <strong>Chaeyong Park</strong></div>
+          <div class="pub-award">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px">
+              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"/>
+            </svg>
+            Best Paper Award
+          </div>
+          <div class="pub-links">
+            <a class="pub-link" href="https://kuaxislab.github.io/publications/2026_TVCG_PostureAdaptive" target="_blank" rel="noopener">Project</a>
+          </div>
+        </div>
+      </div>
+
       <!-- HaptiCraft -->
       <div class="pub-item">
         <img class="pub-thumb" src="https://kuaxislab.github.io/images/publications/hapticraft.png" alt="HaptiCraft teaser"
@@ -591,80 +628,24 @@
       </div>
 
     </div>
+    <a class="more-link" href="https://axis.korea.ac.kr/publications" target="_blank" rel="noopener">
+      Show all publications
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06z" clip-rule="evenodd"/>
+      </svg>
+    </a>
   </section>
 
   <!-- ── News ── -->
   <section id="news">
     <h2>News</h2>
-    <div class="news-list">
-
-      <div class="news-item">
-        <span class="news-date">Jun. 2026</span>
-        <span class="news-content">
-          <span class="news-badge badge-paper">Paper</span>
-          Three papers were accepted to <strong>IEEE ISMAR 2026</strong>.
-        </span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">May 2026</span>
-        <span class="news-content">
-          <span class="news-badge badge-award">Service</span>
-          Chaeyong is serving as an International Program Committee (IPC) for <strong>VRST 2026</strong>.
-        </span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">Apr. 2026</span>
-        <span class="news-content">
-          <span class="news-badge badge-event">Event</span>
-          AXIS Lab participated in <strong>ITRC 인재양성대전 2026</strong> with several VR demonstrations,
-          showcasing our latest research to the public.
-        </span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">Apr. 2026</span>
-        <span class="news-content">
-          <span class="news-badge badge-paper">Paper</span>
-          A Paper was accepted at <strong>IEEE Transactions on Visualization and Computer Graphics</strong>
-          (Q1 Journal, JCR top 5.4%).
-        </span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">Mar. 2026</span>
-        <span class="news-content">
-          <span class="news-badge badge-award">Grant</span>
-          Chaeyong was selected for the <strong>Outstanding Young Researcher Grant</strong> by NRF for 3 years.
-        </span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">Mar. 2026</span>
-        <span class="news-content">
-          <span class="news-badge badge-award">Service</span>
-          Chaeyong is serving as an Associate Chair (AC) for <strong>ACM UIST 2026</strong>.
-        </span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">Feb. 2026</span>
-        <span class="news-content">
-          <span class="news-badge badge-paper">Paper</span>
-          A Paper was accepted at <strong>IEEE Transactions on Haptics</strong>.
-        </span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">Jan. 2026</span>
-        <span class="news-content">
-          <span class="news-badge badge-paper">Paper</span>
-          Two papers were accepted at <strong>ACM CHI 2026</strong>.
-        </span>
-      </div>
-
-    </div>
+    <div class="news-list" id="news-list"></div>
+    <a class="more-link" href="news.html" target="_blank" rel="noopener">
+      Show all news
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06z" clip-rule="evenodd"/>
+      </svg>
+    </a>
   </section>
 
 </main>
@@ -674,6 +655,12 @@
   <p>&copy; 2026 Chaeyong Park &nbsp;&middot;&nbsp; Department of Computer Science and Engineering, Korea University &nbsp;&middot;&nbsp;
   <a href="mailto:chaeyong@korea.ac.kr">chaeyong@korea.ac.kr</a></p>
 </footer>
+
+<script src="news.js"></script>
+<script>
+  // Front page shows the latest 8; the rest live on news.html
+  renderNewsItems(document.getElementById("news-list"), NEWS.slice(0, 8));
+</script>
 
 </body>
 </html>
